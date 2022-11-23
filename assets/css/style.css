@@ -1,0 +1,156 @@
+@font-face {
+    font-family: 'Galano Grotesque';
+    src: url('../../assets/font/GalanoGrotesque-Bold.woff2') format('woff2'),
+        url('../../assets/font/GalanoGrotesque-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Galano Grotesque';
+    src: url('../../assets/font/GalanoGrotesque-Regular.woff2') format('woff2'),
+        url('../../assets/font/GalanoGrotesque-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Galano Grotesque';
+    src: url('../../assets/font/GalanoGrotesque-Medium.woff2') format('woff2'),
+        url('../../assets/font/GalanoGrotesque-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Galano Grotesque';
+    src: url('../../assets/font/GalanoGrotesque-SemiBold.woff2') format('woff2'),
+        url('../../assets/font/GalanoGrotesque-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+* {
+    font-family: 'Galano Grotesque';
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+a{
+    text-decoration: none;
+}
+
+.home-section{
+    margin-top: 50px;
+}
+.category-section{
+    width: 100%;
+    margin: 20px -10px;
+    padding: 0;
+    display: none;
+}
+.category-section .category-item{
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+    text-align: center;
+}
+.category-section .category-item .category-box{
+    width: 22%;
+    flex: 0 0 auto;
+}
+.category-section .category-item .category-box a{
+    color: black;
+    font-size: 11px;
+    display: block;
+}
+.category-section .category-item .category-box img{
+    width: 60px;
+    height: 60px;
+    border: 1px solid #bc1888;
+    border-radius: 50%;
+    margin: auto;
+    margin-bottom: 10px;
+}
+/* home banner */
+.home-content {
+    position: relative;
+}
+.home-content .owl-nav button.owl-prev{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #fff;
+    width: 28px;
+    height: 28px;
+    left: -50px;
+    opacity: 0;
+    background: url(../images/nav.png);
+    transition: all .3s ease;
+}
+.home-content:hover .owl-nav button.owl-prev{
+    left: 3px;
+    opacity: 1;
+}
+.home-content .owl-nav button.owl-prev span{
+    opacity: 0;
+    width: 1px;
+}
+.home-content .owl-nav button.owl-next{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #fff;
+    width: 28px;
+    height: 28px;   
+    right: -50px;
+    opacity: 0;
+    background: url(../images/nav.png);
+    transform: rotate(180deg);
+    transition: all .3s ease;
+}
+.home-content .owl-nav:hover button.owl-next,
+.home-content .owl-nav:hover button.owl-prev{
+    background: url(../images/nav.png);
+}
+.home-content:hover .owl-nav button.owl-next{
+    right: 3px;
+    opacity: 1;
+}
+.home-content .owl-nav button.owl-next span{
+    opacity: 0;
+    width: 1px;
+}
+
+/* Responvice */
+@media (max-width: 786px){
+    .category-section{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+@media (max-width: 991px) {
+    section {
+        padding: 3rem 15px;
+    }
+}
+
